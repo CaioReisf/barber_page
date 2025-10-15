@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-primaria: #2C1E1E;
+    --cor-secundaria: #E8D9C1;
+    --cor-texto-escuro: #1E1E1E;
+    --cor-texto-claro: #F5E9DA;
+    --cor-bronze: #7B5E3B;
+    --cor-dourado: #BFA06A;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(20, 10, 10, 0.75), rgba(20, 10, 10, 0.9)),
+        url("img/pexels-nickoloui-1319458.jpg") center center no-repeat fixed;
+    background-size: cover;
+
+}
+
+header {
+
+    background-color: var(--cor-texto-claro);
+    padding: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor-texto-escuro);
+    text-transform: capitalize;
+    
+}
+
+header li {
+    list-style: none;
+    
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+header a:hover {
+    text-decoration: underline 2px;
+    transition: all .3s ease;
+}
+
+/*=====PRIMEIRA SECAO=====*/
+
+#s1 {
+    margin-top: 22%;
+    text-align: center;
+    color: var(--cor-texto-claro);
+}
+
+#s1 h1 {
+    font-size: 2.9rem;
+    text-transform: uppercase;
+
+}
+
+#s1 h2 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+
+button {
+    background-color: var(--cor-dourado);
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-bronze);
+}
