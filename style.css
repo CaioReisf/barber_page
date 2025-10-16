@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -31,20 +34,23 @@ body {
 }
 
 header {
-
-    background-color: var(--cor-texto-claro);
-    padding: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header a {
     text-decoration: none;
-    color: var(--cor-texto-escuro);
+    color:var(--cor-texto-claro);
     text-transform: capitalize;
-    
+    transition: all .3s ease;
 }
 
 header li {
     list-style: none;
+    font-family: "Texturina", serif;
+
     
 }
 
@@ -57,27 +63,45 @@ header ul {
 }
 
 header a:hover {
-    text-decoration: underline 2px;
-    transition: all .3s ease;
+    transform: translateY(-5px);
+
 }
 
+header svg{
+    font-size: 3rem;
+    color: var(--cor-texto-claro);
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo p{
+    color: var(--cor-texto-claro);
+    font-family: "Rye", serif;
+
+}
 /*=====PRIMEIRA SECAO=====*/
 
 #s1 {
-    margin-top: 22%;
+    margin-top: 13%;
     text-align: center;
     color: var(--cor-texto-claro);
 }
 
 #s1 h1 {
-    font-size: 2.9rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
+    font-family: "Rye", serif;
 
 }
 
 #s1 h2 {
     font-weight: lighter;
     font-size: 1.2rem;
+    font-family: "Texturina", serif;
 }
 
 
