@@ -11,7 +11,7 @@
 }
 
 :root {
-    --cor-primaria: #2C1E1E;
+    --cor-primaria: #352208;
     --cor-secundaria: #E8D9C1;
     --cor-texto-escuro: #1E1E1E;
     --cor-texto-claro: #F5E9DA;
@@ -24,11 +24,11 @@ html{
 body {
     display: flex;
     flex-flow: column nowrap;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background:
         linear-gradient(rgba(20, 10, 10, 0.75), rgba(20, 10, 10, 0.9)),
-        url("img/pexels-nickoloui-1319458.jpg") center center no-repeat fixed;
+        url("img/pexels-nickoloui-1319458.jpg") center center no-repeat scroll;
     background-size: cover;
 
 }
@@ -64,6 +64,7 @@ header ul {
 
 header a:hover {
     transform: translateY(-5px);
+    color: #7B5E3B;
 
 }
 
@@ -83,6 +84,7 @@ header .logo{
     font-family: "Rye", serif;
 
 }
+
 /*=====PRIMEIRA SECAO=====*/
 
 #s1 {
@@ -117,4 +119,105 @@ button {
 
 button:hover {
     background-color: var(--cor-bronze);
+}
+
+/*=====SEGUNDA SECAO=====*/
+
+#s2{
+    margin-top: 19%;
+    color: var(--cor-texto-escuro);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: var(--cor-secundaria);
+    padding: 50px;
+}
+#s2 .txtsobre{
+    background-color: var(--cor-secundaria);
+    
+}
+#s2 h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Rye", serif;
+
+}
+
+#s2 p {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    font-family: "Texturina", serif;
+    width: 500px;
+    
+}
+
+#s2 span{
+    color: var(--cor-primaria);
+}
+
+/*=====TERCEIRA SECAO=====*/
+
+#s3{
+    background-color:var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+#s3 h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-family: "Rye", serif; 
+    text-align: center;
+    
+}
+
+#s3 .para {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    font-family: "Texturina", serif;
+    
+}
+
+#s3 p {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    font-family: "Texturina", serif;
+    width: 500px;
+    
+}
+
+#s3 .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    margin-top: 5%;
+    
+}
+
+#s3 .card{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-escuro);
+    text-align: center;
+    border-radius: 25px;
+    padding: 50px;
+    width: auto;
+    height: 230px;
+    transition: all .3s ease;
+  
+}
+
+#s3 .card:hover{
+    background-color: var(--cor-bronze);
+    color: var(--cor-texto-claro);
+    transform: translateY(-3px);
+}
+
+
+#s3 h2{
+    font-family: "Rye", serif; 
 }
