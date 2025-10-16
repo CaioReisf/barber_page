@@ -15,7 +15,9 @@
     --cor-bronze: #7B5E3B;
     --cor-dourado: #BFA06A;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     display: flex;
     flex-flow: column nowrap;
